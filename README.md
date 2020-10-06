@@ -1,10 +1,10 @@
-# Weather App
+# React Calculator
 
 > A calculator app built using React.js
 
 ## Live Demo
 
-Check out the live demo [here]().
+Check out the live demo [here](https://shielded-anchorage-34110.herokuapp.com/).
 
 ### Prerequisites
 - Node JS.
@@ -15,10 +15,10 @@ Check out the live demo [here]().
 ### Install
 - Clone this repository in your terminal using **git clone** command.
 - Enter the repo directory.
-- Run `npm install && npm run build` in your terminal.
+- Run `npm install && npm start` in your terminal.
 
 ### Usage
-- Run `npm start` in your terminal.
+- Use the calculator as you would use any regular one to do math.
 
 ## Author
 
