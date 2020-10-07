@@ -1,11 +1,14 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Button = props => (
+const Button = ({ ButtonName }) => (
   <button type="button">
-    {props.name}
+    {ButtonName}
   </button>
 );
+
+Button.propTypes = {
+  ButtonName: PropTypes.string.isRequired,
+};
 
 export default Button;
