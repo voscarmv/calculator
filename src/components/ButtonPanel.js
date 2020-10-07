@@ -3,7 +3,6 @@ import Button from './Button';
 
 const buttonGroups = [
   {
-    name: 'group1',
     buttons: [
       {
         name: 'AC',
@@ -23,7 +22,6 @@ const buttonGroups = [
     ],
   },
   {
-    name: 'group2',
     buttons: [
       {
         name: '7',
@@ -43,7 +41,6 @@ const buttonGroups = [
     ],
   },
   {
-    name: 'group3',
     buttons: [
       {
         name: '4',
@@ -63,7 +60,6 @@ const buttonGroups = [
     ],
   },
   {
-    name: 'group4',
     buttons: [
       {
         name: '1',
@@ -83,7 +79,6 @@ const buttonGroups = [
     ],
   },
   {
-    name: 'group5',
     buttons: [
       {
         name: '0',
@@ -106,7 +101,7 @@ const ButtonPanel = () => (
     {
       buttonGroups.map(
         g => (
-          <div className={g.name} key={g.id}>
+          <div className="buttonrow" key={g.id}>
             {
               g.buttons.map(
                 b => <Button ButtonName={b.name} color={b.color} wide={b.wide} key={b.id} />,
