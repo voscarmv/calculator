@@ -4,35 +4,112 @@ import Button from './Button';
 const buttonGroups = [
   {
     name: 'group1',
-    buttons: ['AC', '+/,-', '%', '÷'],
+    buttons: [
+      {
+        name: 'AC',
+        color: true,
+      },
+      {
+        name: '+/,-',
+        color: true,
+      },
+      {
+        name: '%',
+        color: true,
+      },
+      {
+        name: '÷',
+      },
+    ],
   },
   {
     name: 'group2',
-    buttons: ['7', '8', '9', 'X'],
+    buttons: [
+      {
+        name: '7',
+        color: true,
+      },
+      {
+        name: '8',
+        color: true,
+      },
+      {
+        name: '9',
+        color: true,
+      },
+      {
+        name: 'X',
+      },
+    ],
   },
   {
     name: 'group3',
-    buttons: ['4', '5', '6', '-'],
+    buttons: [
+      {
+        name: '4',
+        color: true,
+      },
+      {
+        name: '5',
+        color: true,
+      },
+      {
+        name: '6',
+        color: true,
+      },
+      {
+        name: '-',
+      },
+    ],
   },
   {
     name: 'group4',
-    buttons: ['1', '2', '3', '+'],
+    buttons: [
+      {
+        name: '1',
+        color: true,
+      },
+      {
+        name: '2',
+        color: true,
+      },
+      {
+        name: '3',
+        color: true,
+      },
+      {
+        name: '+',
+      },
+    ],
   },
   {
     name: 'group5',
-    buttons: ['0', '.', '='],
+    buttons: [
+      {
+        name: '0',
+        wide: true,
+        color: true,
+      },
+      {
+        name: '.',
+        color: true,
+      },
+      {
+        name: '=',
+      },
+    ],
   },
 ];
 
 const ButtonPanel = () => (
-  <div>
+  <div className="ButtonPanel">
     {
       buttonGroups.map(
         g => (
           <div className={g.name} key={g.id}>
             {
               g.buttons.map(
-                b => <Button ButtonName={b} key={b.id} />,
+                b => <Button ButtonName={b.name} color={b.color} wide={b.wide} key={b.id} />,
               )
             }
           </div>

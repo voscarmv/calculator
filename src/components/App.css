@@ -1,0 +1,31 @@
+body {
+  background-color: white;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+
+.ButtonPanel {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.lightgray {
+  background-color: lightgray;
+}
+
+.small {
+  width: 25%;
+}
+
+.large {
+  width: 50%;
+}
