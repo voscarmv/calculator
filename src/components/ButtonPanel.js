@@ -7,19 +7,19 @@ const buttonGroups = [
     buttons: ['AC', '+/,-', '%', '÷'],
   },
   {
-    name: 'group1',
+    name: 'group2',
     buttons: ['7', '8', '9', 'X'],
   },
   {
-    name: 'group1',
+    name: 'group3',
     buttons: ['4', '5', '6', '-'],
   },
   {
-    name: 'group1',
+    name: 'group4',
     buttons: ['1', '2', '3', '+'],
   },
   {
-    name: 'group1',
+    name: 'group5',
     buttons: ['0', '.', '='],
   },
 ];
