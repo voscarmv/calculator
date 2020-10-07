@@ -3,12 +3,16 @@ import propTypes from 'prop-types';
 
 const Display = ({ displayValue }) => (
   <div>
-    {displayValue || 0}
+    {displayValue}
   </div>
 );
 
+Display.defaultProps = {
+  displayValue: '0',
+};
+
 Display.propTypes = {
-  displayValue: propTypes.string.isRequired,
+  displayValue: propTypes.string,
 };
 
 export default Display;
