@@ -1,11 +1,14 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
 import React from 'react';
+import propTypes from 'prop-types';
 
-const Display = props => (
+const Display = ({ displayValue }) => (
   <div>
-    {props.value || 0}
+    {displayValue || 0}
   </div>
 );
+
+Display.propTypes = {
+  displayValue: propTypes.string.isRequired,
+};
 
 export default Display;
