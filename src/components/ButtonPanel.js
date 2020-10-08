@@ -6,15 +6,15 @@ const buttonGroups = [
     buttons: [
       {
         name: 'AC',
-        color: true,
+        color: 'lightgray',
       },
       {
         name: '+/,-',
-        color: true,
+        color: 'lightgray',
       },
       {
         name: '%',
-        color: true,
+        color: 'lightgray',
       },
       {
         name: '÷',
@@ -25,15 +25,15 @@ const buttonGroups = [
     buttons: [
       {
         name: '7',
-        color: true,
+        color: 'lightgray',
       },
       {
         name: '8',
-        color: true,
+        color: 'lightgray',
       },
       {
         name: '9',
-        color: true,
+        color: 'lightgray',
       },
       {
         name: 'X',
@@ -44,15 +44,15 @@ const buttonGroups = [
     buttons: [
       {
         name: '4',
-        color: true,
+        color: 'lightgray',
       },
       {
         name: '5',
-        color: true,
+        color: 'lightgray',
       },
       {
         name: '6',
-        color: true,
+        color: 'lightgray',
       },
       {
         name: '-',
@@ -63,15 +63,15 @@ const buttonGroups = [
     buttons: [
       {
         name: '1',
-        color: true,
+        color: 'lightgray',
       },
       {
         name: '2',
-        color: true,
+        color: 'lightgray',
       },
       {
         name: '3',
-        color: true,
+        color: 'lightgray',
       },
       {
         name: '+',
@@ -83,11 +83,11 @@ const buttonGroups = [
       {
         name: '0',
         wide: true,
-        color: true,
+        color: 'lightgray',
       },
       {
         name: '.',
-        color: true,
+        color: 'lightgray',
       },
       {
         name: '=',
