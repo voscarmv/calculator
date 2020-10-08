@@ -1,11 +1,27 @@
-const calculate = (data, buttonName) => {
-  const { total, next, operation } = data;
-  switch (buttonName) {
-    case '+/-':
-      return { total: -1 * total, next: -1 * next, operation };
+import Big from 'big.js';
+
+const operate = ({ total, next, operation }) => {
+  const tot = Big(total);
+  let output = 0;
+  switch (operation) {
+    case '+':
+      output = tot.plus(next);
+      break;
+    case '-':
+      output = tot.minus(next);
+      break;
+    case 'X':
+      output = tot.times(next);
+      break;
+    case '/':
+      output = tot.div(next);
+      break;
+    case '%':
+      output = tot.div(next).times(100);
+      break;
     default:
-      return null;
   }
+  return output.toString;
 };
 
-export default calculate;
+export default operate;
