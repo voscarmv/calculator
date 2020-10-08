@@ -2,7 +2,7 @@ import React from 'react';
 import propTypes from 'prop-types';
 
 const Display = ({ displayValue }) => (
-  <div>
+  <div className="Display">
     {displayValue}
   </div>
 );
