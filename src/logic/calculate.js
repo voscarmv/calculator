@@ -4,7 +4,7 @@ const calculate = ({ total, next, operation }, buttonName) => {
   const isDigit = char => char >= '0' && char <= '9';
 
   if (isDigit(buttonName)) {
-    return { total, next: `${next}${buttonName}`, operation };
+    return { total, next: `${next || ''}${buttonName}`, operation };
   }
 
   switch (buttonName) {

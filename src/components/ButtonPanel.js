@@ -13,7 +13,7 @@ class ButtonPanel extends React.Component {
             col: 'lightgray',
           },
           {
-            name: '+/,-',
+            name: '+/-',
             col: 'lightgray',
           },
           {
