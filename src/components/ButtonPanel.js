@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from './Button';
 import PropTypes from 'prop-types';
+import Button from './Button';
 
 class ButtonPanel extends React.Component {
   constructor(props) {
@@ -10,15 +10,15 @@ class ButtonPanel extends React.Component {
         buttons: [
           {
             name: 'AC',
-            color: 'lightgray',
+            col: 'lightgray',
           },
           {
             name: '+/,-',
-            color: 'lightgray',
+            col: 'lightgray',
           },
           {
             name: '%',
-            color: 'lightgray',
+            col: 'lightgray',
           },
           {
             name: '÷',
@@ -29,15 +29,15 @@ class ButtonPanel extends React.Component {
         buttons: [
           {
             name: '7',
-            color: 'lightgray',
+            col: 'lightgray',
           },
           {
             name: '8',
-            color: 'lightgray',
+            col: 'lightgray',
           },
           {
             name: '9',
-            color: 'lightgray',
+            col: 'lightgray',
           },
           {
             name: 'X',
@@ -48,15 +48,15 @@ class ButtonPanel extends React.Component {
         buttons: [
           {
             name: '4',
-            color: 'lightgray',
+            col: 'lightgray',
           },
           {
             name: '5',
-            color: 'lightgray',
+            col: 'lightgray',
           },
           {
             name: '6',
-            color: 'lightgray',
+            col: 'lightgray',
           },
           {
             name: '-',
@@ -67,15 +67,15 @@ class ButtonPanel extends React.Component {
         buttons: [
           {
             name: '1',
-            color: 'lightgray',
+            col: 'lightgray',
           },
           {
             name: '2',
-            color: 'lightgray',
+            col: 'lightgray',
           },
           {
             name: '3',
-            color: 'lightgray',
+            col: 'lightgray',
           },
           {
             name: '+',
@@ -86,12 +86,12 @@ class ButtonPanel extends React.Component {
         buttons: [
           {
             name: '0',
-            wide: true,
-            color: 'lightgray',
+            wid: true,
+            col: 'lightgray',
           },
           {
             name: '.',
-            color: 'lightgray',
+            col: 'lightgray',
           },
           {
             name: '=',
@@ -101,7 +101,7 @@ class ButtonPanel extends React.Component {
     ];
   }
 
-  handleClick = buttonName => {
+  hC = buttonName => {
     const { clickHandler } = this.props;
     clickHandler(buttonName);
   }
@@ -115,7 +115,7 @@ class ButtonPanel extends React.Component {
               <div className="buttonrow" key={g.id}>
                 {
                   g.buttons.map(
-                    b => <Button clickHandler={this.handleClick(b.name)} ButtonName={b.name} color={b.color} wide={b.wide} key={b.id} />,
+                    b => <Button cH={this.hC} ButtonName={b.name} c={b.col} w={b.wid} key={b.id} />,
                   )
                 }
               </div>

@@ -13,6 +13,7 @@ class App extends React.Component {
       operation: null,
     };
     this.handleClick = buttonName => {
+      console.log(calculate(this.state, buttonName));
       const result = calculate(this.state, buttonName);
       this.setState(result);
     };
