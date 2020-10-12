@@ -21,7 +21,7 @@ const operate = ({ total, next, operation }) => {
       break;
     default:
   }
-  return output.toString;
+  return output.toString();
 };
 
 export default operate;
