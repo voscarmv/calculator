@@ -13,7 +13,7 @@ const operate = ({ total, next, operation }) => {
     case 'X':
       output = tot.times(next);
       break;
-    case '/':
+    case '÷':
       output = tot.div(next);
       break;
     case '%':
