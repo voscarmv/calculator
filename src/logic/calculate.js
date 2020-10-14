@@ -2,9 +2,9 @@ import operate from './operate';
 
 const calculate = ({ total, next, operation }, buttonName) => {
   const isDigit = char => char >= '0' && char <= '9';
+  let first = '';
 
   if (isDigit(buttonName)) {
-    let first = '';
     if (next) {
       [first] = next;
     }
@@ -21,7 +21,10 @@ const calculate = ({ total, next, operation }, buttonName) => {
     case '=':
       return { total: 0, next: operate({ total, next, operation }), operation: null };
     default:
-      return { total: next, next: '', operation: buttonName };
+      if (next) {
+        [first] = next;
+      }
+      return { total: `${isDigit(first) ? next || '0' : '0'}`, next: '', operation: buttonName };
   }
 };
 
