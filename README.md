@@ -2,6 +2,8 @@
 
 > A calculator app built using React.js
 
+![image](https://user-images.githubusercontent.com/2739245/95854356-73eba300-0d1c-11eb-806d-be2ce46c8c1f.png)
+
 ## Live Demo
 
 Check out the live demo [here](https://shielded-anchorage-34110.herokuapp.com/).
